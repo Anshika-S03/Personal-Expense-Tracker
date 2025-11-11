@@ -1,3 +1,28 @@
+# Node
+node_modules/
+npm-debug.log
+.env
+.env.local
+.DS_Store
+
+# frontend
+/frontend/dist/
+/frontend/node_modules/
+
+# backend
+/backend/node_modules/
+
+# VSCode
+.vscode/
+
+# logs
+logs/
+*.log
+
+# OS
+Thumbs.db
+
+
 # Logs
 logs
 *.log
