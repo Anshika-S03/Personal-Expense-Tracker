@@ -21,7 +21,7 @@ app.use("/api/transactions", transactionRoutes);
 
 // Connect to MongoDB
 mongoose
-  .connect(process.env.MONGO_URI);
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected Successfully"))
   .catch((err) => console.error("MongoDB Connection Error:", err));
 
