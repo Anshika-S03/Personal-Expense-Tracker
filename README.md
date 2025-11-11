@@ -3,7 +3,7 @@
 **Author:** Anshika Sharma  
 
 Live demo:
-- **Frontend:** https://personal-expense-tracker.vercel.app  
+- **Frontend:** https://personal-expense-tracker-eight-red.vercel.app/
 - **Backend API:** https://personal-expense-tracker-2ve0.onrender.com  
 
 ---
