@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 import cors from "cors";
 import mongoose from "mongoose";
 import authRoutes from "./routes/authRoutes.js";
+import transactionRoutes from "./routes/transactionRoutes.js";
+
 
 // Load environment variables
 dotenv.config();
@@ -13,6 +15,9 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors());
+app.use("/api/auth", authRoutes);
+app.use("/api/transactions", transactionRoutes); 
+
 
 // Connect to MongoDB
 mongoose
@@ -23,7 +28,6 @@ mongoose
   .then(() => console.log("MongoDB Connected Successfully"))
   .catch((err) => console.error("MongoDB Connection Error:", err));
 
-  app.use("/api/auth", authRoutes);
 
 // a protected test route
 import { requireAuth } from "./middleware/authMiddleware.js";
